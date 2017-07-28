@@ -1,0 +1,47 @@
+<div class="container">
+	<div class="row">
+		
+		<div class="col-md-9 viewCol">
+			<p class="fedExLabel"> {{fedExLabel}} </p>
+		</div>
+
+		<div class="col-md-3 viewCol">
+			<p class="uOLabel"> {{uOLabel}} </p>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		
+		<div class="col-md-3 viewCol">
+			<p class="subHead">{{FedEx1}}</p>
+				<br/>
+				<br/>
+			<p ng-repeat="g in fedExDetail1">{{g}}</p>
+			<br/>
+		</div>
+
+		<div class="col-md-3 viewCol">
+			<p class="subHead">{{FedEx2}}</p>
+				<br/>
+				<br/>
+			<p ng-repeat="s in fedExDetail2">{{s}}</p>
+		</div>
+
+		<div class="col-md-3 viewCol">
+			<p class="subHead">{{FedEx3}}</p>
+				<br/>
+				<br/>
+			<p ng-repeat="t in fedExDetail3">{{t}}</p>
+		</div>
+
+		<div class="col-md-3 viewCol">
+			<p class="subHead">{{UnderAsst}}</p>
+				<br/>
+				<br/>
+			<p ng-repeat="s in underAsstDetail1">{{s}}</p>
+		</div>
+
+	</div>
+</div>
