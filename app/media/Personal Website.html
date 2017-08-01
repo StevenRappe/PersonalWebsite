@@ -16,7 +16,7 @@
 
 	<div class="container">
 
-			<div class="row navBar">
+			<div class="row toolbar">
 			
 				<div class="col-md-3">
 					<a ng-href="#/profile.html" class="navButton button">Profile</a>
@@ -40,14 +40,14 @@
 		<div class="header">
 
 			<div class="row header">
-				<div class="col-md-4">
-					<div class="contactDiv">
-						<a ng-href="./app/media/Resume.docx" download="resume.docx" class="contactButton button">Resume</a>
-						<a ng-href="{{gitHubLink}}" class="contactButton button">Git Hub</a>
-						<a href="https://www.linkedin.com/in/steven-rappe-1aa81ab2/" class="contactButton button">{{linkedIn}}	</a>
-					</div>
+				<div class="col-md-2">
+					<a ng-href="./app/media/Resume.docx" download="resume.docx" class="resumeButton button">Resume</a>
 				</div>
 
+				<div class="col-md-2">
+
+					<a ng-href="{{gitHubLink}}" class="gitHubButton button">Git Hub</a>
+				</div>
 
 				<div class="col-md-4">
 
@@ -56,11 +56,11 @@
 				</div>
 				
 				<div class="col-md-4">
-					
-						
+					<div class="contactDiv">
+						<a href="https://www.linkedin.com/in/steven-rappe-1aa81ab2/" class="contactButton button">{{linkedIn}}	</a>
 						<div class="contactInfo">{{email}}</div>
 						<div class="contactInfo">{{phoneNumber}}</div>
-					
+					</div>
 				</div>
 
 			</div>	

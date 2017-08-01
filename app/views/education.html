@@ -1,9 +1,6 @@
 <div class="container">
 	<div class="row centeredRow">
 		
-		<div class="col-md-6 viewCol">
-			<div class="subHead"> {{university}} </div>
-		</div>
 
 		<div class="col-md-3 viewCol">
 			<div class="subHead"> {{advancedCourses}} </div>
@@ -13,12 +10,28 @@
 			<div class="subHead"> {{courseDesc}} </div>
 		</div>
 
+		<div class="col-md-6 viewCol">
+			<div class="subHead"> {{university}} </div>
+		</div>
+
 	</div>
 
 	<hr/>
 
 	<div class="row">
-		
+
+		<div class="col-md-3 viewCol">
+				<select ng-init="course = items[0]" ng-model="course" class="courseSelectDD" ng-options="item.name for item in items"></select>
+		</div>
+
+		<div class="col-md-3 viewCol">
+			<div class="courseInfoDiv">
+				<p class="selectTitle">{{course.name}}</p>
+					<br/>
+	       		{{course.desc}}
+	       	</div>
+		</div>
+
 		<div class="col-md-3 viewCol">
 			<ul>
 				<li>
@@ -43,18 +56,6 @@
 
 		<div class="col-md-3 viewCol">
 			<img ng-src="{{oregonPicture}}" class="oregonPicture">
-		</div>
-
-		<div class="col-md-3 viewCol">
-				<select ng-init="course = items[0]" ng-model="course" class="courseSelectDD" ng-options="item.name for item in items"></select>
-		</div>
-
-		<div class="col-md-3 viewCol">
-			<div class="courseInfoDiv">
-				<p class="selectTitle">{{course.name}}</p>
-					<br/>
-	       		{{course.desc}}
-	       	</div>
 		</div>
 
 	</div>

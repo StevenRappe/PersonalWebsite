@@ -1,46 +1,54 @@
 <div class="container">
 	<div class="row">
 		
-		<div class="col-md-9 viewCol">
-			<p class="fedExLabel"> {{fedExLabel}} </p>
+		<div class="col-md-12 viewCol">
+			<p class="fedExLabel"> {{outputTitle}} </p>
 		</div>
 
-		<div class="col-md-3 viewCol">
-			<p class="uOLabel"> {{uOLabel}} </p>
-		</div>
 	</div>
-
-	<hr>
 
 	<div class="row">
 		
-		<div class="col-md-3 viewCol">
-			<p class="subHead">{{FedEx1}}</p>
+		<div class="col-md-3 viewNavBar viewCol">
+
+			
+			<button ng-click="cimAceClick()" class="viewButton button">{{cimAceTitle}}</button>
+
+			<button ng-click="oRClick()" class="viewButton button">{{oRTitle}}</button>
+
+			<button ng-click="teamLeadClick()" class="viewButton button">{{teamLeadTitle}}</button>
+
+			<button ng-click="undAsstClick()" class="viewButton button">{{undAsstTitle}}</button>
+	
+			<!-- <p class="subHead">{{FedEx1}}</p>
 				<br/>
 				<br/>
 			<p ng-repeat="g in fedExDetail1">{{g}}</p>
-			<br/>
+			<br/> -->
 		</div>
 
 		<div class="col-md-3 viewCol">
-			<p class="subHead">{{FedEx2}}</p>
+			<div>{{outputDiv1}}</div>
+			<!-- <p class="subHead">{{FedEx2}}</p>
 				<br/>
 				<br/>
-			<p ng-repeat="s in fedExDetail2">{{s}}</p>
+			<p ng-repeat="s in fedExDetail2">{{s}}</p>-->
 		</div>
 
 		<div class="col-md-3 viewCol">
-			<p class="subHead">{{FedEx3}}</p>
+			<div>{{outputDiv2}}</div>
+			<!-- <p class="subHead">{{FedEx3}}</p>
 				<br/>
 				<br/>
-			<p ng-repeat="t in fedExDetail3">{{t}}</p>
+			<p ng-repeat="t in fedExDetail3">{{t}}</p> -->
 		</div>
 
 		<div class="col-md-3 viewCol">
-			<p class="subHead">{{UnderAsst}}</p>
+			<div>{{outputDiv3}}</div>
+			<!-- <p class="subHead">{{UnderAsst}}</p>
 				<br/>
 				<br/>
-			<p ng-repeat="s in underAsstDetail1">{{s}}</p>
+			<p ng-repeat="s in underAsstDetail1">{{s}}</p> -->
 		</div>
 
 	</div>

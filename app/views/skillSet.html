@@ -1,6 +1,53 @@
 <div class="container">
 	<div class="row centeredRow">
 
+		<div class="col-md-12 viewCol">
+			<span class="skillSetLabel"> {{outputTitle}} </span>
+		</div>
+
+	</div>
+
+	<div class="row">
+	
+		<div class="col-md-3 viewNavBar viewCol">
+			<button ng-click="javaClick()" class="viewButton button">Java</button>
+
+			<button ng-click="webClick()" class="viewButton button">Web</button>
+
+			<button ng-click="linuxClick()" class="viewButton button">Linux</button>
+
+			<button ng-click="otherClick()" class="viewButton button">Other</button>
+		</div>
+
+		<div class="col-md-3 viewCol">
+			<ul>
+				<li ng-repeat="g in outputDiv1">{{g}}</li>
+				<!-- <li ng-repeat="y in webStack">{{y}}</li> -->
+			</ul>
+		</div>
+
+		<div class="col-md-3 viewCol">
+			<ul>
+				<li ng-repeat="h in outputDiv2">{{h}}</li>
+
+			</ul>
+			<!-- <li ng-repeat="z in linuxStack">{{z}}</li> -->
+		</div>
+		
+		<div class="col-md-3 viewCol">
+			<ul>
+				<li ng-repeat="i in outputDiv3">{{i}}</li>
+
+			</ul>
+			<!-- <li ng-repeat="s in otherSkills">{{s}}</li> -->
+		</div>
+
+	</div>
+</div>
+
+<!-- <div class="container">
+	<div class="row centeredRow">
+
 		<div class="col-md-3 viewCol">
 			<span class="subHead"> {{javaTitle}} </span>
 		</div>
@@ -42,4 +89,4 @@
 		</ul>
 
 	</div>
-</div>
+</div> -->
